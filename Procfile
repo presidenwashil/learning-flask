@@ -1,0 +1,1 @@
+web: PMB STMIK Widya Cipta Dharma app:main
