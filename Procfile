@@ -1,1 +1,1 @@
-web: PMB STMIK Widya Cipta Dharma app:main
+web: python main.py runserver %PORT%
