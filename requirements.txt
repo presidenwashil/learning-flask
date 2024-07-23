@@ -5,3 +5,9 @@ autopep8
 # App
 flask
 pytz
+Jinja
+click
+itsdangerous
+Werkzeug
+colorama
+MarkupSafe
