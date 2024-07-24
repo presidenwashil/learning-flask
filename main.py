@@ -127,7 +127,6 @@ def get_recommended_questions(keyword):
             "Berapa biaya pendaftaran di STMIK Wicida?",
             "Berapa biaya daftar ulang di STMIK Wicida?",
             "Cara pembayaran biaya pendaftaran di STMIK Wicida?",
-            "Bagaimana cara validasi pembayaran?",
         ])
     else:
         recommendations = default_recommendations

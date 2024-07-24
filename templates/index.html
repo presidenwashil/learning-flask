@@ -548,7 +548,7 @@
         </div>
     </footer>
 
-    <div id="chatbot-container" class="chatbot-container w-auto min-h-max">
+    <div id="chatbot-container" class="chatbot-container min-h-max lg:w-2/5">
         <div class="chatbot-header bg-primary-600">
             <img class="profile-img" src="{{ url_for('static', filename='chatbot_icon.png') }}" alt="Chatbot Profile">
             <span class="bot-name">Chatbot PMB Wicida</span>
@@ -577,7 +577,7 @@
 </div>
 
 
-<script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
+<script src="{{ url_for('static', filename='flowbite.min.js') }}"></script>
 <script>
     $(document).ready(function() {
         var botOnline = true;
