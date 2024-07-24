@@ -23,216 +23,23 @@
       </script>
 
     <!-- <style>
-        /* General Styles */
-        body {
-            font-family: 'Arial', sans-serif;
-            background-color: #f4f4f4;
-            margin: 0;
-            padding: 0;
-        }
-
-        header{
-            background-color: #B14DBC;
-            color: white;
-            padding: 10px 0;
-        }
-
-        .header-container, .footer-container {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            max-width: 1200px;
-            margin: auto;
-            padding: 0 20px;
-        }
-
-        .navbar ul {
-            list-style: none;
-            display: flex;
-            margin: 0;
-            padding: 0;
-        }
-
-        .navbar ul li {
-            margin-right: 20px;
-            margin-left: 20px;
-        }
-
-        .navbar ul li a {
-            color: white;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .hero {
-            text-align: center;
-            padding: 65px 20px;
-            background-color: #B14DBC;
-            color: white;
-        }
-
-        .hero h1 {
-            font-size: 36px;
-        }
-
-        .hero p {
-            font-size: 18px;
-            margin: 20px 0;
-        }
-
-        .cta-btn {
-            background-color: #ffffff;
-            color: #7b3683;
-            padding: 10px 20px;
-            border: none;
-            border-radius: 5px;
-            text-decoration: none;
-            font-size: 16px;
-        }
-
-        .features {
-            display: flex;
-            justify-content: space-around;
-            padding: 50px 20px;
-        }
-
-        .feature {
-            text-align: center;
-            width: 30%;
-        }
-
-        .feature i {
-            font-size: 40px;
-            margin-bottom: 20px;
-            color: #B14DBC;
-        }
-
-        .feature h2 {
-            font-size: 24px;
-            margin-bottom: 10px;
-        }
-
-        .feature p {
-            font-size: 16px;
-            color: #666;
-        }
-
-
-        .chatbot-header {
-            display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: #673AB7;
-    color: #FFFFFF;
-    padding: 10px;
-    text-align: center;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    position: relative; /* Tetapkan posisi relatif untuk kontainer */
-}
-
-        .chatbot-header .profile-img {
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            margin-right: 10px;
-        }
-
-        .bot-name {
-    font-size: 1.2em;
-    margin-right: 10px; /* Ubah margin agar lebih dekat dengan status */
-    flex-grow: 1; /* Memastikan nama chatbot memenuhi ruang yang tersedia */
-}
-
-
-
-.chatbot-container.maximized .bot-header {
-    justify-content: center; /* Memastikan nama dan status tetap di tengah */
-}
-        .chatbot-header #close-btn {
-            background: none;
-            border: none;
-            color: white;
-            font-size: 20px;
-            cursor: pointer;
-        }
-
-/* Default style for chatbot chat box */
-.chatbot-chat-box {
-    height: 400px; /* Sesuaikan tinggi sesuai kebutuhan */
-    overflow-y: auto; /* Gunakan auto untuk mengaktifkan overflow saat diperlukan */
-    padding: 10px;
-    margin-bottom: 40px; /* Margin bottom default untuk layar kecil */
-}
-
-/* Media query untuk layar yang lebih besar */
-@media screen and (min-width: 768px) {
-    .chatbot-chat-box {
-        margin-bottom: 40px; /* Kurangi margin bottom untuk layar besar */
-    }
-}
-
-
-        .chatbot-chat-box .message-wrapper {
-            margin-bottom: 10px;
-        }
-
-        .chatbot-chat-box .name-label {
-            font-size: 12px;
-            margin-bottom: 4px;
-            color: #999;
-        }
-
-        .chatbot-chat-box .message {
-            border-radius: 10px;
+        .chatbot-chat-box {
+            height: 400px; /* Sesuaikan tinggi sesuai kebutuhan */
+            overflow-y: auto; /* Gunakan auto untuk mengaktifkan overflow saat diperlukan */
             padding: 10px;
-            display: inline-block;
-            max-width: 80%;
-            line-height: 1.4;
-            word-wrap: break-word;
-            animation: fadeIn 0.5s;
+            margin-bottom: 40px; /* Margin bottom default untuk layar kecil */
         }
 
-        .chatbot-chat-box .message-user {
-            background-color: #e0e0e0;
-            color: #000;
-            text-align: right;
-            margin-left: auto;
+        /* Media query untuk layar yang lebih besar */
+        @media screen and (min-width: 768px) {
+            .chatbot-chat-box {
+                margin-bottom: 40px; /* Kurangi margin bottom untuk layar besar */
+            }
         }
 
-        .chatbot-chat-box .message-bot {
-            background-color: #673AB7;
-            color: white;
-        }
 
-/* Style untuk input chatbot */
-.chatbot-input {
-    display: flex;
-    align-items: center;
-    border-top: 1px solid #ddd;
-    margin-top: 5px; /* Sesuaikan jarak dari kotak chat */
-    padding-top: 10px; /* Sesuaikan padding top jika perlu */
-}
-
-.chatbot-input input[type="text"] {
-    flex: 1;
-    padding: 8px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    margin-right: 10px;
-}
-
-.chatbot-input button {
-    background-color: #673AB7;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-        /* Recommendation Styles */
-        .recommendation-section {
+                /* Recommendation Styles */
+                .recommendation-section {
             margin-top: 10px;
         }
 
@@ -330,6 +137,315 @@
             
         }
     </style> -->
+
+    <style>
+        /* General Styles */
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+
+        header{
+            background-color: #B14DBC;
+            color: white;
+            padding: 10px 0;
+        }
+
+        .header-container, .footer-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: auto;
+            padding: 0 20px;
+        }
+
+        .navbar ul {
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 65px 20px;
+            background-color: #B14DBC;
+            color: white;
+        }
+
+        .hero h1 {
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .cta-btn {
+            background-color: #ffffff;
+            color: #7b3683;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        .features {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px 20px;
+        }
+
+        .feature {
+            text-align: center;
+            width: 30%;
+        }
+
+        .feature i {
+            font-size: 40px;
+            margin-bottom: 20px;
+            color: #B14DBC;
+        }
+
+        .feature h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .feature p {
+            font-size: 16px;
+            color: #666;
+        }
+
+
+        .chatbot-header {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #673AB7;
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+            position: relative; /* Tetapkan posisi relatif untuk kontainer */
+        }
+
+        .chatbot-header .profile-img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .bot-name {
+    font-size: 1.2em;
+    margin-right: 10px; /* Ubah margin agar lebih dekat dengan status */
+    flex-grow: 1; /* Memastikan nama chatbot memenuhi ruang yang tersedia */
+}
+
+
+
+.chatbot-container.maximized .bot-header {
+    justify-content: center; /* Memastikan nama dan status tetap di tengah */
+}
+        .chatbot-header #close-btn {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 20px;
+            cursor: pointer;
+        }
+
+/* Default style for chatbot chat box */
+.chatbot-chat-box {
+    height: 400px; /* Sesuaikan tinggi sesuai kebutuhan */
+    overflow-y: auto; /* Gunakan auto untuk mengaktifkan overflow saat diperlukan */
+    padding: 10px;
+    margin-bottom: 40px; /* Margin bottom default untuk layar kecil */
+}
+
+/* Media query untuk layar yang lebih besar */
+@media screen and (min-width: 768px) {
+    .chatbot-chat-box {
+        margin-bottom: 40px; /* Kurangi margin bottom untuk layar besar */
+    }
+}
+
+
+        .chatbot-chat-box .message-wrapper {
+            margin-bottom: 10px;
+        }
+
+        .chatbot-chat-box .name-label {
+            font-size: 12px;
+            margin-bottom: 4px;
+            color: #999;
+        }
+
+        .chatbot-chat-box .message {
+            border-radius: 10px;
+            padding: 10px;
+            display: inline-block;
+            max-width: 80%;
+            line-height: 1.4;
+            word-wrap: break-word;
+            animation: fadeIn 0.5s;
+        }
+
+        .chatbot-chat-box .message-user {
+            background-color: #e0e0e0;
+            color: #000;
+            text-align: right;
+            margin-left: auto;
+        }
+
+        .chatbot-chat-box .message-bot {
+            background-color: #673AB7;
+            color: white;
+        }
+
+/* Style untuk input chatbot */
+.chatbot-input {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #ddd;
+    margin-top: 5px; /* Sesuaikan jarak dari kotak chat */
+    padding-top: 10px; /* Sesuaikan padding top jika perlu */
+}
+
+.chatbot-input input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+}
+
+.chatbot-input button {
+    background-color: #c026d3;
+    color: white;
+    border: none;
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+        /* Recommendation Styles */
+        .recommendation-section {
+            margin-top: 10px;
+        }
+
+        .recommendation-section p {
+            font-size: 14px;
+            margin-bottom: 5px;
+            color: #666;
+        }
+
+        .recommendation-buttons {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .recommendation-btn {
+            background-color:#c026d3;
+            color: white;
+            border: none;
+            padding: 5px 10px;
+            margin: 5px;
+            cursor: pointer;
+            border-radius: 5px;
+            display: inline-block;
+            max-width: 70%;
+            font-size: 14px;
+        }
+
+         /* CSS untuk gambar dalam chatbot */
+/* CSS untuk modal gambar */
+#image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.9);
+    justify-content: center;
+    align-items: center;
+    overflow: hidden; /* Tambahkan ini */
+}
+
+#image-modal img {
+    max-width: 90%;
+    max-height: 90%;
+    transition: transform 0.25s ease;
+}
+
+.modal-content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px; /* Sesuaikan jarak dari atas */
+    right: 20px; /* Sesuaikan jarak dari kanan */
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+/* Perbaikan untuk zoom in/out */
+#image-modal img {
+    transition: transform 0.25s ease;
+    cursor: grab; /* Tambahkan ini untuk kursor */
+}
+
+.close-modal {
+    position: absolute;
+    top: 20px; /* Sesuaikan jarak dari atas */
+    right: 20px; /* Sesuaikan jarak dari kanan */
+    color: white;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 10000; /* Pastikan tombol close muncul di atas modal */
+}
+
+        /* Keyframes for animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+
+            
+        }
+    </style>
 </head>
 <body>
 
@@ -381,6 +497,7 @@
     </div>
 </header> -->
 
+<div class="h-screen dark:bg-gray-900">
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">Selamat Datang di PMB STMIK Widya Cipta Dharma</h1>
@@ -431,7 +548,7 @@
         </div>
     </footer>
 
-    <div id="chatbot-container" class="chatbot-container w-auto">
+    <div id="chatbot-container" class="chatbot-container w-auto min-h-max">
         <div class="chatbot-header bg-primary-600">
             <img class="profile-img" src="{{ url_for('static', filename='chatbot_icon.png') }}" alt="Chatbot Profile">
             <span class="bot-name">Chatbot PMB Wicida</span>
@@ -441,22 +558,23 @@
             </div>
             
         </div>
-        <div id="chatbot-chat-box" class="chatbot-chat-box w-full md:w-auto p-4 md:p-8">
+        <div id="chatbot-chat-box" class="chatbot-chat-box w-full min-h-full p-4 md:p-8">
             <!-- Chatbox content will be dynamically populated -->
         </div>
-        <div class="chatbot-input w-full md:w-auto p-4 md:p-8">
+        <div class="chatbot-input w-full md:w-auto">
             <input type="text" id="chatbot-user-input" placeholder="Silahkan ketik pertanyaanmu...">
             <button id="chatbot-send-btn" class="bg-primary-600">Kirim</button>
         </div>
     </div>
 
     <!-- Modal untuk tampilan gambar -->
-    <!-- <div id="image-modal">
+    <div id="image-modal">
         <span class="close-modal">&times;</span>
         <div class="modal-content">
             <img id="modal-img" src="">
         </div>
-    </div> -->
+    </div>
+</div>
 
 
 <script src="https://cdn.jsdelivr.net/npm/flowbite@2.4.1/dist/flowbite.min.js"></script>
