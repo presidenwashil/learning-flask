@@ -38,7 +38,6 @@ footer {
     right: 20px;
     flex-direction: column;
     margin-bottom: 10px;
-    width: 450px;
     background-color: #FFFFFF;
     border-radius: 8px;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -46,6 +45,20 @@ footer {
     resize: both; /* Allow resizing both horizontally and vertically */
     overflow: auto; /* Handle overflow within the container */
     transition: width 0.3s ease, height 0.3s ease;
+    @media (max-width: 478px) {
+        width: 100%;
+        height: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+    @media screen and (max-width: 768px) {
+        width: 478px;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+        
+    }
 }
 
 
@@ -55,7 +68,7 @@ footer {
 }
 
 .chatbot-header {
-    background-color: #673AB7;
+    /* background-color: #673AB7; */
     color: #FFFFFF;
     padding: 10px;
     text-align: center;
@@ -150,17 +163,13 @@ footer {
 }
 
 .chatbot-input button {
-    background-color: #673AB7;
+    background-color: #c026d3;
     color: white;
     border: none;
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
     flex-shrink: 0; /* Tetapkan ukuran tombol tetap */
-}
-
-#chatbot-send-btn:hover {
-    background-color: #5E35B1;
 }
 
 .message-wrapper {
@@ -186,12 +195,12 @@ footer {
 }
 
 .message-user {
-    background-color: #7a53be;
-    color: #ffffff
+    background-color: #f3f4f6;
+    color: #111827
 }
 
 .message-bot {
-    background-color: #7b3683;
+    background-color: #c026d3;
     text-align: left;
     color: #ffffff
 }
@@ -467,7 +476,7 @@ header {
     border-radius: 5px;
     max-width: 70%; /* Atur lebar maksimal sesuai kebutuhan */
     word-wrap: break-word;
-    background-color: #673AB7;
+    background-color:  #c026d3;
     color: #ffffff;
     position: relative; /* Penting untuk posisi yang tepat */
 }
